@@ -1,0 +1,8 @@
+.container .row .card .card-body {
+    height: 400px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+

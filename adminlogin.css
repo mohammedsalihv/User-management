@@ -1,0 +1,28 @@
+.container .row .card .card-body {
+    height: 400px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+.row {
+   height: 60vh;
+}
+
+.card .card-body{
+    background-color: rgb(255, 255, 255);
+    border-radius: 7px;
+}
+.form{
+   margin-top: 10%;
+}
+#btn{
+    width: 50%;
+   margin-left: 26%;
+   border-radius: 8px;
+}
+.title{
+    text-align: center;
+    padding-top: 10px;
+   
+}

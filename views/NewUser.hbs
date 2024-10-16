@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New User</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+</head>
+<body>
+    
+<div class="container mt-5 pt-5">
+    <div class="row m-auto">
+        <div class="col-12 col-sm-8 col-md-4 m-auto">
+            <div class="card border-0 shadow">
+                <div class="card-body " style="width: 100%;">
+                    <h2 class="text-center" style="margin-bottom: 20%;">Add New User</h2>
+                    <p class="text-danger" id="Exstmsgerr" style="text-align:center;">{{this.Exstmsg}}</p>
+                    <p class="text-success" id="Exstmsgsccs" style="text-align:center;">{{this.Successmsg}}</p>
+                    <form action="/admin/Addinguser" method="post">
+                        <div class="mb-3">
+                            <label  style="font-weight: bold;"class="d-flex justify-content-center" for="">Username</label>
+                            <input type="text" class="form-control" id="username" name="username" required>
+                        </div>
+                        <div class="mb-3">
+                            <label  style="font-weight: bold;" class="d-flex justify-content-center" for="">Email address</label>
+                            <input type="email" class="form-control" id="password" name="email"
+                                placeholder="" required>
+                        </div>
+                        <div class="mb-3">
+                            <label style="font-weight: bold;" class="d-flex justify-content-center" for="">Create a password</label>
+                            <input type="password" class="form-control" id="password" name="password"
+                                placeholder="" required>
+                        </div>
+                        <button style="width: 50%; margin-left:25%" type="submit" class="btn btn-secondary btn-small">Add</button>
+
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<script>
+    const Exstmsgerr = document.getElementById('Exstmsgerr')
+    if(Exstmsgerr){
+        setTimeout(()=>{
+            Exstmsgerr.style.display = 'none';
+        } , 3000)
+    }
+    const Exstmsgsccs = document.getElementById('Exstmsgsccs')
+    if(Exstmsgsccs){
+       setTimeout(()=>{
+        Exstmsgsccs.style.display = 'none';
+       }, 3000)
+    }
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
